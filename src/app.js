@@ -1,16 +1,16 @@
-const opciones = ['piedra', 'papel', 'tijera', 'lizard', 'spock'];
+const opcionesDeJuego = ['piedra', 'papel', 'tijera', 'lizard', 'spock'];
 
 const pregunta = prompt("¡Elige una opción!: piedra, papel, tijera, lizard, spock").toLowerCase();
 
 // Genera una opción aleatoria para el bot
 const opcionAleatoria = () => {
-  const index = Math.floor(Math.random() * opciones.length);
-  return opciones[index];
+  const index = Math.floor(Math.random() * opcionesDeJuego.length);
+  return opcionesDeJuego[index];
 };
 
 const seleccionUsuario = pregunta;
 const seleccionBot = opcionAleatoria();
-
+// Indica que habeis seleccionado tu y el bot
 console.log(`Seleccionaste: ${seleccionUsuario}`);
 console.log(`El bot seleccionó: ${seleccionBot}`);
 
